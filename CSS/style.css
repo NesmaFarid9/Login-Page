@@ -1,0 +1,93 @@
+:root{
+    --mainColor: #24353F;
+    --secondaryColor: #17A2B8;
+    --basic-font: "Titillium Web", sans-serif;
+}
+body{
+    background-color: var(--mainColor);
+    overflow: hidden;
+}
+a{
+    color: inherit;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* start home page */
+.navbar h1{
+    font-family: var(--basic-font);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+nav,
+.cardMessage{
+    background-color: var(--mainColor);
+    box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+#logOutBtn{
+    color: #B6B6B6;
+    border: 1px solid #FFC107;
+    background-color: transparent;
+    font-family: var(--basic-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#logOutBtn:hover{
+    color: white;
+    background-color: #FFC107;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* end home page */
+/* start login & singup */
+h2{
+    font-family: var(--basic-font);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--secondaryColor);
+}
+p{
+    font-family: var(--basic-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+input{
+    border: 1px solid #CED4DA;
+}
+.main{
+    box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+.main-form{
+    background-color: var(--mainColor);
+}
+#loginBtn,
+#signUpBtn{
+    border: 1px solid var(--secondaryColor) !important;
+    color: var(--secondaryColor) !important; 
+}
+#loginBtn:hover,
+#signUpBtn:hover{
+    border: 1px solid var(--secondaryColor) !important;
+    color: white !important;
+    background-color: var(--secondaryColor) !important;
+}
+main #emailInput:focus,
+main #passwordInput:focus,
+main #nameInput:focus{
+    border: 1px solid #80BDFF !important;
+    outline: #80BDFF;
+}
+input::placeholder{
+    color: #B6B6B6;
+}
+span a:hover{
+    text-decoration: underline !important;
+}
+#successMsg{
+    color: #28A745;
+}
+/* end login & singup */
