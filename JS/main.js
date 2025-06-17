@@ -19,8 +19,8 @@ function addUser(user){
     localStorage.setItem("personsList", JSON.stringify(personsList));
 };
 function checkEmail(){ 
-    var emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-    var nameRegex = /^[a-zA-Z\s]+$/;;
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    var nameRegex = /^[a-zA-Z\s]+$/;
     var passwordRegex = /^[a-zA-Z0-9._%+-]+$/;
     
     if(!emailRegex.test(emailInput.value) || !nameRegex.test(nameInput.value) || !passwordRegex.test(passwordInput.value) || emailInput.value.trim() === '' || nameInput.value.trim() === '' || passwordInput.value.trim() === ''){
