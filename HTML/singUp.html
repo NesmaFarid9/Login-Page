@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Login</title>
+    <!-- logo -->
+    <link rel="shortcut icon" href="./images/star.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <!--style  -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<body>
+    
+    <main class="main-form d-flex flex-column justify-content-center align-items-center text-center align-content-center">
+        <div class="main m-5 p-5 h-w-50 w-75 w-md-50 w-lg-50">
+            <div class="form">
+                <h2 class="m-4">Smart Login System</h2>
+                <input type="text" name="name" id="nameInput" placeholder="Enter your name" class="bg-transparent mb-3 w-100 p-2 rounded-1 text-white">
+                <!-- <div>Email invalid</div> -->
+                <input type="email" name="email" id="emailInput" placeholder="Enter your email" class="bg-transparent mb-3 w-100 p-2 rounded-1 text-white">
+                <input type="password" name="password" id="passwordInput" placeholder="Enter your password" class="bg-transparent mb-4 w-100 p-2 rounded-1 text-white">
+                <p class="pb-3 d-none" id="successMsg">Success</p>
+                <p class="pb-3 text-danger d-none" id="errorMsg">All inputs is required</p>
+                <p class="pb-3 text-danger d-none" id="errorEmailMsg">Email aready exist</p>
+                <p class="pb-3 text-danger d-none" id="errorNameMsg">incorrect name</p>
+                <p class="pb-3 text-danger d-none" id="errorEmailReg">incorrect email</p>
+                <p class="pb-3 text-danger d-none" id="errorPassMsg">incorrect password</p>
+                <input onclick="checkEmail()" type="button" value="Sign Up" id="signUpBtn" class="w-100 p-1 rounded-1 bg-transparent mb-3">
+                <p class="text-white">Don’t have an account? <span><a href="../index.html" class="text-decoration-none">Signin</a></span></p>
+            </div>
+    </div>
+    </main>
+  
+  
+    <script src="../JS/bootstrap.bundle.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>
