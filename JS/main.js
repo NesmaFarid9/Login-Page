@@ -24,7 +24,7 @@ function addUser(user){
 function checkEmail(){ 
     var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     var nameRegex = /^[a-zA-Z\s]+$/;;
-    var passwordRegex = /^[a-zA-Z0-9._%+-]+$/;
+    var passwordRegex = /^[^\s]+$/;
     
     if(emailInput.value.trim() === '' || nameInput.value.trim() === '' || passwordInput.value.trim() === ''){
         successMsg.classList.add('d-none');
