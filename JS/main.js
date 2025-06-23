@@ -53,7 +53,7 @@ function checkEmail(){
         errorPassMsg.classList.add('d-none');
         return false;
     }
-    else if(!passwordRegex.test(passwordInput.value)){
+    else if(!passwordRegex.test(passwordInput.value.trim())){
         successMsg.classList.add('d-none');
         errorMsg.classList.add('d-none');
         errorEmailMsg.classList.add('d-none');
