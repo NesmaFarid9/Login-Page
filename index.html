@@ -21,7 +21,7 @@
             <div class="form">
                 <h2 class="m-4">Smart Login System</h2>
                 <input type="email" name="email" id="emailInput" placeholder="Enter your email" class="bg-transparent mb-3 w-100 p-2 rounded-1 text-white">
-                <input type="password" name="password" id="passwordInput" placeholder="Enter your password" class="bg-transparent mb-4 w-100 p-2 rounded-1 text-white">
+                <input type="password" name="password" id="passwordInput" maxlength="128" placeholder="Enter your password" class="bg-transparent mb-4 w-100 p-2 rounded-1 text-white">
                 <p class="pb-3 text-danger d-none" id="errorMsg">All inputs is required</p>
                 <p class="pb-3 text-danger d-none" id="loginErrorMsg">incorrect email or password</p>
                 <input type="button" value="Login" id="loginBtn" class="w-100 p-1 rounded-1 bg-transparent mb-3" onclick="validSignIn()">
